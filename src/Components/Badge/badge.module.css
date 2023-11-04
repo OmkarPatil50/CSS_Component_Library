@@ -1,0 +1,26 @@
+.badgeDiv {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  margin: 20px;
+}
+
+.badge {
+  background: none;
+  position: relative;
+  border: none;
+  font-size: 20px;
+}
+
+.badgeContent {
+  font-size: 0.5em;
+  position: absolute;
+
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

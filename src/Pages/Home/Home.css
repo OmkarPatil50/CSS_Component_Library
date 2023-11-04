@@ -1,0 +1,61 @@
+:root {
+  --primary-color: #ff004f;
+  --secondary-color: #fff6ea;
+  --action-color: #3b82f6;
+  --grey-color: #9a9a9a;
+  --black-color: #282828;
+  --white-color: #fff;
+  --lynx-white-color: #f7f7f7;
+  --violet-color: #5348c7;
+  --lynx-gray-color: #c5c5c5;
+  --font: "Open Sans", sans-serif;
+  --xxl-size: 4rem;
+  --xl-size: 2.5rem;
+  --l-size: 2rem;
+  --m-size: 1.5rem;
+  --s-size: 1rem;
+  --xs-size: 0.5rem;
+  --xl-font: 3rem;
+  --light-weight: 300;
+  --regular-weight: 400;
+  --semibold-weight: 600;
+  --bold-weight: 700;
+  --black-weight: 900;
+}
+
+.home-page {
+  width: 100vw;
+  height: 87.5vh;
+}
+
+.hero-section {
+  flex-direction: column;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+}
+
+.hero-description {
+  text-align: center;
+  margin: 20px;
+  font-size: 1rem;
+}
+
+.hero-btn {
+  cursor: pointer;
+  padding: 15px 30px;
+  font-size: 24px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 10px;
+}
+
+.hero-btn:hover {
+  opacity: 0.7;
+  transform: scale(1.02);
+  transition-duration: 0.3s;
+}

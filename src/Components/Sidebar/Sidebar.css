@@ -1,0 +1,76 @@
+:root {
+  --primary-color: #ff004f;
+  --secondary-color: #fff6ea;
+  --action-color: #3b82f6;
+  --grey-color: #9a9a9a;
+  --black-color: #282828;
+  --white-color: #fff;
+  --lynx-white-color: #f7f7f7;
+  --violet-color: #5348c7;
+  --lynx-gray-color: #c5c5c5;
+  --font: "Open Sans", sans-serif;
+  --xxl-size: 4rem;
+  --xl-size: 2.5rem;
+  --l-size: 2rem;
+  --m-size: 1.5rem;
+  --s-size: 1rem;
+  --xs-size: 0.5rem;
+  --xl-font: 3rem;
+  --light-weight: 300;
+  --regular-weight: 400;
+  --semibold-weight: 600;
+  --bold-weight: 700;
+  --black-weight: 900;
+}
+.navbar {
+  box-sizing: border-box;
+  background: var(--lynx-white-color);
+  position: fixed;
+  top: 50px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 275px;
+}
+
+.nav-section {
+  height: 100vh;
+  box-sizing: border-box;
+  transition-duration: 2s;
+}
+
+.nav-item {
+  box-sizing: border-box;
+  font-size: 15px;
+  color: var(--black-color);
+  text-decoration: none;
+  font-weight: 100;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.nav-item:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 10px;
+}
+
+.nav-item i {
+  box-sizing: border-box;
+  width: 20px;
+}
+
+.nav-item p {
+  margin: 0 20px 0;
+}
+
+.active {
+  border-bottom: 5px solid var(--primary-color);
+  border-right: 5px solid var(--primary-color);
+  border-top: 1px solid var(--primary-color);
+  border-left: 1px solid var(--primary-color);
+  border-radius: 10px;
+}

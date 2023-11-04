@@ -1,0 +1,120 @@
+:root {
+  --primary-color: #ff004f;
+  --secondary-color: #fff6ea;
+  --action-color: #3b82f6;
+  --grey-color: #9a9a9a;
+  --black-color: #282828;
+  --white-color: #fff;
+  --lynx-white-color: #f7f7f7;
+  --violet-color: #5348c7;
+  --lynx-gray-color: #c5c5c5;
+  --font: "Open Sans", sans-serif;
+  --xxl-size: 4rem;
+  --xl-size: 2.5rem;
+  --l-size: 2rem;
+  --m-size: 1.5rem;
+  --s-size: 1rem;
+  --xs-size: 0.5rem;
+  --xl-font: 3rem;
+  --light-weight: 300;
+  --regular-weight: 400;
+  --semibold-weight: 600;
+  --bold-weight: 700;
+  --black-weight: 900;
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin: 0;
+}
+
+.card-text {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.card.with-badge {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 4px 8px;
+}
+
+.card.with-dismiss {
+  position: relative;
+}
+
+.dismiss-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  color: var(--secondary-color);
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.card.with-overlay {
+  position: relative;
+}
+
+.overlay {
+  cursor: pointer;
+  margin: 0;
+  padding: 20px 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card.with-overlay:hover .overlay {
+  opacity: 1;
+}
+
+.vertical-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.horizontal-card img {
+  width: 100px;
+  height: auto;
+  margin-right: 16px;
+}
